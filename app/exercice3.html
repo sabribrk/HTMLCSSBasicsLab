@@ -1,1 +1,55 @@
-TODO
+
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Exercice 3</title>
+  <link rel="stylesheet" href="styles/exercice3.css">
+ </head>
+ <body>
+   <h1>Exercice 3</h1>
+    <h2>Annonce immobilière</h2>
+    <form>
+      <p><label for="title">Le titre de l'annonce* : </label><input type="text" name="title" id="title" size="50" placeholder="Saisissez un titre explicite résument bien votre demande." required/></p>
+      <p><label for="prix">Le prix du bien : </label><input type="number" name="prix" id="prix" min="0" size="30"/> €</p>
+      <p><label for="date">Date de disponibilité du bien* : </label><input type="date" name="date" id="date" required/></p>
+      <p><label for="surface">La surface du bien* : </label><input type="number" name="surface" id="surface" min="0" size="30" required/> m² </label></p>
+      <p><label for="type">Le type de bien* : </label><input type="text" name="type" id="type" size="50" placeholder="Ex: appartement, maison, terrain, etc." required/></p>
+      <p><label for="Où">Où* : </label><input type="Où" name="Où" id="Où" size="50" placeholder="Département, Ville, Code Postal, arrdt..." required/></p>
+      <p>Nombre de pièce(s)* : <br />
+        <input type="radio" name="pièce" value="pièce1" id="pièce1" required/><label for="pièce1">1</label>
+        <input type="radio" name="pièce" value="pièce2" id="pièce2" required/><label for="pièce2">2</label>
+        <input type="radio" name="pièce" value="pièce3" id="pièce3" required/><label for="pièce3">3</label><br />
+        <input type="radio" name="pièce" value="pièce4" id="pièce4" required/><label for="pièce4">4</label>
+        <input type="radio" name="pièce" value="pièce5+" id="pièce5+" required/><label for="pièce5+">5+</label><br />
+      </p>
+      <p>
+       <label for="classe énergétique">La classe énergétique :</label>
+        <select name="classe énergétique" id="classe énergétique">
+          <option>A (≤ 50)</option>
+          <option>B (de 51 à 90)</option>
+          <option>C (de 91 à 150)</option>
+          <option>D (de 151 à 230)</option>
+          <option>E (de 231 à 330)</option>
+          <option>F (de 331 à 450)</option>
+          <option>G (> 450)</option>
+        </select>
+      </p>
+    <P>Options supplémentaires :<br />
+       <input type="checkbox" name="jacuzzi" id="jacuzzi"/><label for="jacuzzi">jacuzzi</label>
+       <input type="checkbox" name="garage" id="garage"/><label for="garage">garage</label>
+       <input type="checkbox" name="terrasse" id="terrasse"/><label for="terrasse">terrasse</label><br />
+       <input type="checkbox" name="piscine" id="piscine"/><label for="piscine">piscine</label>
+       <input type="checkbox" name="jardin" id="jardin"/><label for="jardin">jardin</label>
+       <input type="checkbox" name="cave" id="cave"/><label for="cave">cave</label>
+    </p>
+  <p><label for="annonce">Corps de l'annonce : </label><br />
+  <textarea id="annonce" name="annonce" placeholder="Rédiger une description la plus complète possible de votre annonce." style="width:250px; height:200px"></textarea></p>
+<p><label for="image">Selectionner une image</label><br />
+<input type="file" id="image"/></P>
+<p><label for="tel">Téléphone* : </label><input type="tel" name="tel" id="tel" size="50" placeholder="06080446651" required/></p>
+<p><label for="email">Email* : </label><input type="email" name="email" id="email" size="50" placeholder="email@example.com" required/></p>
+<p>(* champs obligatoires)</p>
+<p><input type="submit" value="Envoyer"/></p>
+  </form>
+ </body>
+</html>
